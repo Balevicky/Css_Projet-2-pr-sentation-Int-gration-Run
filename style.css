@@ -1,0 +1,417 @@
+/* :root {} */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/font/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat", Verdana;
+}
+
+body {
+
+    margin: 0;
+
+}
+
+button {
+    text-transform: uppercase;
+    border-radius: 18px;
+    border: 1px solid rgb(238, 235, 235);
+    background: white;
+    transition: 0.5s ease;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(132, 238, 132);
+    color: white;
+}
+
+
+
+/* ===================== header============ */
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    background: rgb(228, 225, 225);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.part-left {
+    width: 92%;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.part-left h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 20px;
+    font-size: 1.5rem;
+}
+
+.part-left p {
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.part-left button {
+    padding: 10px 15px;
+    margin: 20px 0 20px;
+}
+
+/* ========== */
+
+.part-right {
+    width: 100%;
+    height: 100%;
+}
+
+.part-right img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===================container-magna============ */
+.container-magna {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-magna::after {
+    content: "";
+    background: rgb(228, 225, 225);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    /* transform: translateY(-3px); */
+}
+
+.part-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.part-picture img {
+    object-fit: cover;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.part-text {
+    /* padding: 0 20px; */
+    margin: 30px 0;
+}
+
+.part-text h2 {
+    font-weight: 400;
+    margin: 20px 0 20px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.part-text p {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.part-text button {
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    margin-left: 10px;
+}
+
+/* ============ container-tempus========= */
+.container-tempus {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container-tempus::after {
+    content: "";
+    background: rgb(228, 225, 225);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+.container-tempus-text {
+    margin: 20px 20px;
+}
+
+.container-tempus-text h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0 20px;
+}
+
+.container-tempus-text p {
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.container-tempus-text button {
+    padding: 10px 15px;
+    margin: 20px 0 20px;
+}
+
+/* =====image==== */
+.container-tempus-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.container-tempus-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===============FORMULAIRE============ */
+.Formulaire {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1100px;
+}
+
+.Formulaire::after {
+    content: "";
+    background: rgb(228, 225, 225);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 2px;
+    /* margin: 0 auto; */
+}
+
+form {
+    text-align: center;
+    padding: 40px 30px 15px;
+}
+
+form h2 {
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.Container-formulaire {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    width: 410px;
+    height: 280px;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template-areas:
+        "Nam Ema"
+        "Mas Mas"
+        "btn btn";
+}
+
+.Name {
+    grid-area: Nam;
+    margin-left: 10px;
+}
+
+.Email {
+    grid-area: Ema;
+    margin-right: 10px;
+}
+
+.Message {
+    grid-area: Mas;
+}
+
+.bnt {
+    grid-area: btn;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+#name {
+    width: 185px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(218, 214, 214);
+    padding-left: 5px;
+    margin: 10px 0px;
+}
+
+#email {
+    width: 185px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(218, 214, 214);
+    padding-left: 5px;
+    margin: 10px 0px;
+    /* justify-self: flex-start; */
+}
+
+#message {
+    width: 386.99px;
+    height: 100px;
+    */ border-radius: 3px;
+    border: 1px solid rgb(218, 214, 214);
+    margin: 10px 5px;
+    padding-left: 5px;
+}
+
+#btn_send {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 18px;
+    border: 1px solid rgb(238, 235, 235);
+    background: white;
+    transition: 0.5s ease;
+}
+
+#btn_send:hover {
+    cursor: pointer;
+    background: rgb(132, 238, 132);
+    color: black;
+}
+
+/* ============FOOTER =========== */
+.footer-logo {
+    margin: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-logo i {
+    width: 10%;
+}
+
+/* =============== MEDIA QUERIES ========== */
+@media screen and (max-width: 600px) {
+    header {
+
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 1fr;
+
+    }
+
+    /* ================================= */
+    .container-magna {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+        margin-right: 10px;
+    }
+
+    .part-picture {
+        display: none;
+        /* width: 90%; */
+    }
+
+    .part-text {
+        /* margin-left: 10px; */
+        margin: 20px 0 0 10px;
+    }
+
+    .part-text h2 {
+
+        margin: 0 0 20px;
+    }
+
+    /* ========================== */
+    .container-tempus {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container-tempus-picture {
+        display: none;
+    }
+
+    /* .container-tempus-text {
+        margin: 20px 20px;
+    } */
+    .container-tempus-text h2 {
+        margin: 0 0 20px;
+    }
+
+    .container-tempus-text button {
+        padding: 10px 15px;
+        margin: 20px 0 0;
+    }
+}
+
+/* ================== mobile==================== */
+@media screen and (max-width: 470px) {
+
+    header {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr;
+    }
+
+    .part-left h2 {
+        margin-top: 10px;
+    }
+
+    .part-left button {
+        margin-bottom: 10px;
+    }
+
+    /* ================= FORMULAIRE============= */
+    .Formulaire {
+        max-width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .Container-formulaire {
+        width: 100%;
+    }
+
+    #name {
+        width: 90%;
+        /* margin-left: 10PX; */
+    }
+
+    #email {
+        width: 90%;
+        /* margin-right: 10PX; */
+    }
+
+    #message {
+        width: 90%;
+    }
+}
